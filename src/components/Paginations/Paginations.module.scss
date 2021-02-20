@@ -1,0 +1,55 @@
+@import 'variables.scss';
+
+.Container {
+    margin: 20px auto;
+    display: flex;
+    font-size: 10px;
+    justify-content: center;
+    position: relative;
+    
+}
+
+.Container button {
+    display: inline-block;
+    border: none;
+    margin: 3px;
+    padding: 2px 5px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+
+.Nums {
+    width: 30px; 
+    text-align: center;
+}
+
+.SelectedNum {
+
+    width: 30px; 
+    text-align: center;
+    background-color: $color-blue;
+    color: $color-white;
+}
+
+.Container button:disabled {
+    color: $color-grey;
+    cursor: not-allowed;
+}
+
+.Container .Nums:hover {
+    opacity: 0.5;
+}
+
+.Next:disabled {
+    opacity: 0.8;
+}
+.Next:hover {
+    opacity: 0.5;
+}
+.Previous:hover{
+    opacity: 0.5;
+}
+.Previous:disabled{
+    opacity: 0.8;
+}

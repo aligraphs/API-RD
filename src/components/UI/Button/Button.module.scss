@@ -1,0 +1,25 @@
+@import 'variables.scss';
+
+.button {
+    border: none;
+    color: $color-white;
+    cursor: pointer;
+    font: inherit;
+    padding: 5px 10px;
+    margin: 5px;
+    text-align: center;
+    border-radius: 5px;
+    height: auto;
+}
+
+.blue {
+    background-color: $color-blue;
+}
+
+.red {
+    background-color: $color-red;
+}
+
+.button:hover{
+    opacity: 0.7;
+}

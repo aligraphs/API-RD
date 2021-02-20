@@ -1,0 +1,44 @@
+@import 'variables.scss';
+
+.Row {
+    display: flex;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.RowItemStatus {
+    text-align: center;
+    display: block;
+    flex: $flex-status;
+}
+
+.RowItemAssignee {
+    text-align: center;
+    display: block;
+    flex: $flex-name;
+}
+
+.RowItemId {
+    text-align: center;
+    display: block;
+    flex: $flex-id;
+    
+}
+.RowItemTitle {
+    text-align: left;
+    display: block;
+    flex: $flex-title;
+    
+}
+
+.Actions {
+    display: flex;
+    justify-content: center;
+    flex: $flex-actions;
+    
+}
+
+.Actions button {
+    width: 40%;
+    margin: auto 5px ;
+}
