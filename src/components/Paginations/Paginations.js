@@ -10,7 +10,7 @@ for(let i = 1; i<= Math.ceil(props.totalPosts/props.postsPerPage); i++){
 
 return(
         <div className={classes.Container}>
-            <button disabled={props.currentPage === pageNum[0] ? true : false} className={classes.Previous}>
+            <button onClick={props.prev} disabled={props.currentPage === pageNum[0] ? true : false} className={classes.Previous}>
                 Prev
             </button>
 

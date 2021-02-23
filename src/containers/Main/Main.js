@@ -140,11 +140,21 @@ class Main extends Component {
     }
 
     nextPageHandler = () => {
-        this.setState(prevState=> {
+        this.setState(prevState => {
             return{
                 currentPage: prevState.currentPage + 1
             };
         })
+    }
+
+    prevPageHandler = () => {
+        this.setState(prevState => {
+            return{
+            currentPage: prevState.currentPage - 1
+            };
+        
+        })
+        
     }
 
     componentDidUpdate(){
@@ -192,7 +202,8 @@ class Main extends Component {
         postsPerPage={this.state.postPerPage}
         paginate={this.changePageHandler}
         currentPage={this.state.currentPage}
-        next={this.nextPageHandler} />
+        next={this.nextPageHandler}
+        prev={this.prevPageHandler} />
         </div>
         </Aux>
       
